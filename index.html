@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Project tracking intro component</title>
+   <!-- Bootstrap CDN -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- CSS Link-->
+   <link rel="stylesheet" href="css/styles.css">
+  <!-- JS/ Jquery CDN-->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700;800&family=Barlow:wght@100&display=swap" rel="stylesheet">  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section id = "navigation-bar">
+    <div class="container-fluid">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="my-1 mx-2 close"><img src="images/icon-close.svg" alt="close-img"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active text-uppercase" href="">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-uppercase" href="">FEATURES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-uppercase" href="#pricing">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class = "nav-link disabled text-uppercase" href="">.</a>
+            </li>
+            <li class="nav-item">
+              <a class = "nav-link disabled text-uppercase" href="">LOGIN</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-6 column-left">
+          <!--button and text on the same line-->
+          <div class="container py-2">
+            <div class="row">
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-dark text-uppercase btn-new">New</button>
+                    <h6 class="d-inline-block align-middle text-uppercase dashboard-text">Monograph Dashboard</h6>
+                </div>
+            </div>
+          </div>
+
+          
+          <h1 class="heading-text text-uppercase">Powerful insights into your team</h1>
+          <p class="agile-text">Project planning and time tracking for agile teams</p>
+          <!--button and text on the same line-->
+          <div class="container py-2">
+            <div class="row">
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-danger text-uppercase btn-schedule">Schedule a demo</button>
+                    <h6 class="d-inline-block align-middle text-uppercase preview-text">To see a preview</h6>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 column-right">
+          <img class = "illustration-img" src="images/illustration-devices.svg" alt="devices-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="pricing">
+
+    <h3 class="pricing-heading">Our Pricing</h3>
+    <h4 class="toggle-text">Annually</h4>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    <h4 class="toggle-text">Monthly</h4>
+      <div class="row card-row">
+      <div class="pricing-column col-lg-4 col-md-6 ">
+        <div class="card card-light">
+          <div class="card-header">
+            <h4 class="pricing-variant-text">Basic</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="dollar-text">$</h4>
+            <h2 class="pricing-amount-text">19.99</h2>
+            <hr>
+            <p class="pricing-text">500 GB Storage</p>
+            <hr>
+            <p class="pricing-text">2 Users Allowed</p>
+            <hr>
+            <p class="pricing-text">Send up to 3 GB</p>
+            <hr>
+            <button type="button" class="btn btn-lg btn-block btn-dark pricing-text text-uppercase"><strong>Learn More</strong></button>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card bg-dark text-white card-dark">
+          <div class="card-header">
+            <h4 class="pricing-variant-text">Professional</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="dollar-text">$</h4>
+            <h2 class="pricing-amount-text">24.99</h2><hr class="hr-card">
+            <p class="pricing-text">1 TB Storage</p><hr class="hr-card">
+            <p class="pricing-text">5 Users Allowed</p><hr class="hr-card">
+            <p class="pricing-text">Send up to 10 GB</p><hr class="hr-card">
+            <button type="button" class="btn btn-lg btn-block btn-light pricing-text text-uppercase"><strong>Learn More</strong></button>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="pricing-column col-lg-4">
+        <div class="card card-light">
+          <div class="card-header">
+            <h4 class="pricing-variant-text">Master</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="dollar-text">$</h4>
+            <h2 class="pricing-amount-text">39.99</h2><hr>
+            <p class="pricing-text">2 TB Storage</p><hr>
+            <p class="pricing-text">10 Users Allowed</p><hr>
+            <p class="pricing-text">Send up to 20 GB</p><hr>
+            <button type="button" class="btn btn-lg btn-block btn-dark pricing-text text-uppercase"><strong>Learn More</strong></button>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+  
+  </section>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="index.js" meta = "UTF-8"></script>
+</body>
+</html>

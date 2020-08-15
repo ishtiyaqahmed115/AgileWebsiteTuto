@@ -1,0 +1,230 @@
+body{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+}
+#pricing{
+    margin-top: 3%;
+    text-align: center;
+}
+/* switch css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #343a40 ;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #ccc;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #ccc;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}  
+
+.card-row{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 25%;
+    padding-right: 20%;
+}
+.card-dark{
+    border-bottom-width: 15px;
+    border-top-width: 15px;
+    border-radius: 0.5rem;
+}
+.card-light{
+    top : 15px;
+    border-radius: 0.5rem;
+
+}
+
+.col-lg-4, .col-md-6{
+    padding : 0;
+}
+.hr-card{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+ 
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 0px solid rgba(255,255,255,.125);
+}
+.heading-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+
+}
+.navbar{
+    padding: 3% 5%;
+}
+.navbar-toggler>.close {
+    display:inline-block;
+    width: max-content;
+    height: max-content;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.7);
+}
+.nav-item{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.nav-link{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #363636;
+    
+}
+.nav-link:hover{
+    text-decoration: underline;
+    /* @include hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+      } */
+}
+.collapse{
+    padding-right: 15%;
+}
+.column-left{
+    padding: 3% 5%;
+    text-align: left;
+}
+.column-right{
+    padding: 3% 5%;
+    background-color: hsl(207, 33%, 95%);
+}
+.illustration-img{
+    height: 90%;
+    object-fit: contain;
+}
+.agile-text{
+    width: 45%;
+    font-weight: 700;
+    color: #363636;
+}
+.preview-text{
+    letter-spacing: 0.1rem;
+    font-size: small;
+    padding-top: 4%;
+    padding-left: 6%;
+}
+.dashboard-text{
+    letter-spacing: 0.1rem;
+    font-size: small;
+    padding-top: 4%;
+    padding-left: 6%;
+}
+.pricing-heading{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3rem;
+    font-weight: 700; 
+}
+.toggle-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 2% 1%;
+    vertical-align: sub;
+}
+.pricing-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+    letter-spacing: 0.05rem; 
+}
+.pricing-variant-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700; 
+}
+.pricing-amount-text{
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 700; 
+    letter-spacing: 0.05rem; 
+
+}
+.dollar-text{
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700; 
+    letter-spacing: 0.1rem; 
+    vertical-align: super;
+    
+}
+.btn-danger{
+    background-color:#ff847c;
+    border-color:#ff847c;
+}
+.btn-danger:hover{
+    background-color:#d63447;
+    border-color:#d63447
+}
+.btn-new{
+    margin-left: -15px;
+    font-size: 0.8rem; 
+    font-weight: 600;
+    border-radius: 40px;
+}
+.btn-schedule{
+    margin-left: -15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
